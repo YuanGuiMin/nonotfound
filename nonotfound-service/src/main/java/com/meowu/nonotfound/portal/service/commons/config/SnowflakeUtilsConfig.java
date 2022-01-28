@@ -29,7 +29,7 @@ public class SnowflakeUtilsConfig{
 
     @RefreshScope
     @Bean
-    public SnowflakeUtils snowflakeUtils() throws ConfigurationException {
+    public SnowflakeUtils snowflakeUtils() throws ConfigurationException{
         // ip
         List<String> ips = IPUtils.findByUsing();
 

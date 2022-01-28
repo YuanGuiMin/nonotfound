@@ -14,8 +14,8 @@ public interface SnowflakeClient{
 
     @GetMapping(value = "/api/1.0/snowflake", produces = MediaType.APPLICATION_JSON_VALUE)
     Response<Snowflake> get(
-            @RequestParam("application") String application,
-            @RequestParam("ip") String ip,
-            @RequestParam("port") Integer port
+        @RequestParam("application") String application,
+        @RequestParam("ip") String ip,
+        @RequestParam("port") Integer port
     );
 }
